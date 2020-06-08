@@ -1,0 +1,101 @@
+extends layout/layout
+block content
+  .wrapper
+    main.main
+      mixin card2()
+        .item-catalogue-card.col-lg-3.col-sm-4.col-6
+          .item-catalogue-card__container
+            .item-catalogue-card__section
+              .card-sticks
+                span.card-sticks__item -20%
+              a(href="#").item-catalogue-card__image
+                i.far.fa-eye.item-catalogue-card__icon
+                img(src='http://new.satra.ru/upload/resize_cache/iblock/c24/280_290_1/c24a479940c2a7370c08c8aa4fcb2864.JPG', alt='Смеситель Swedbe Venado 1610 для раковины')
+            .item-catalogue-card__section
+              a(href="#").item-catalogue-card__title Держатель туалетной бумаги Brabantia 414565
+            .item-catalogue-card__section
+              .item-catalogue-card__pricing
+                span.item-catalogue-card__current-price 99 999 <span class="rub">руб.</span>
+                span.item-catalogue-card__old-price 10 000 <span class="rub">руб.</span>
+              .item-catalogue-card__buttons
+                // добавлять класс active если в избранном/сравнении
+                //btn
+                a(href="javascript:void(0)").item-catalogue-card__button.item-catalogue-card__button_style-1.item-catalogue-card__button_favorites
+                  i.fas.fa-heart
+                //btn
+                a(href="javascript:void(0)").item-catalogue-card__button.item-catalogue-card__button_style-1.item-catalogue-card__button_comparison
+                  i.fas.fa-signal
+                //btn
+                a(href="javascript:void(0)").item-catalogue-card__button.item-catalogue-card__button_style-2
+                  //img(src="http://new.satra.ru/local/templates/satra/icons/11.svg" alt="icon")
+                  i.fas.fa-arrow-right
+      //содержимое таба
+      .additional-sales.container
+        .row
+          //navlist
+          ul.additional-sales-navlist.col-md-3
+            li.additional-sales-navlist__item
+              a(href="javascript:void(0);").additional-sales-navlist__link.active Все
+            li.additional-sales-navlist__item
+              a(href="javascript:void(0);").additional-sales-navlist__link Светильники
+            li.additional-sales-navlist__item
+              a(href="javascript:void(0);").additional-sales-navlist__link Полки
+            li.additional-sales-navlist__item
+              a(href="javascript:void(0);").additional-sales-navlist__link Смесители
+            li.additional-sales-navlist__item
+              a(href="javascript:void(0);").additional-sales-navlist__link Дозаторы
+            li.additional-sales-navlist__item
+              a(href="javascript:void(0);").additional-sales-navlist__link Мыльницы
+          .additional-sales-tablist.col-md-9
+            //tab
+            .additional-sales-tab
+              .additional-sales-tab__content.row
+                +card2()
+                +card2()
+                +card2()
+                +card2()
+                +card2()
+                +card2()
+                +card2()
+              .additional-sales-tab__more
+                button.button.button_style-1 Еще товары
+            //tab
+            .additional-sales-tab
+              .additional-sales-tab__content.row
+                +card2()
+                +card2()
+            //tab
+            .additional-sales-tab
+              .additional-sales-tab__content.row
+                +card2()
+                +card2()
+                +card2()
+                +card2()
+              .additional-sales-tab__more
+                button.button.button_style-1 Еще товары
+            //tab
+            .additional-sales-tab
+              .additional-sales-tab__content.row
+                +card2()
+              .additional-sales-tab__more
+                button.button.button_style-1 Еще товары
+            //tab
+            .additional-sales-tab
+              .additional-sales-tab__content.row
+                +card2()
+                +card2()
+                +card2()
+                +card2()
+                +card2()
+                +card2()
+              .additional-sales-tab__more
+                button.button.button_style-1 Еще товары
+            //tab
+            .additional-sales-tab
+              .additional-sales-tab__content.row
+                +card2()
+                +card2()
+                +card2()
+              .additional-sales-tab__more
+                button.button.button_style-1 Еще товары
+              

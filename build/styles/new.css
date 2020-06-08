@@ -1,0 +1,235 @@
+a, button, label, input, textarea {
+  -webkit-touch-callout: none;
+  outline: none;
+  display: block;
+  background-color: transparent;
+  box-shadow: none;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0; }
+
+a, button, label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  cursor: pointer; }
+
+.button {
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: .15s ease-out; }
+  .button_style-1 {
+    width: 100%;
+    background-color: #78a1b3;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    color: #fff; }
+    .button_style-1:hover {
+      background-color: #7eb8d2; }
+
+.card-sticks {
+  position: absolute;
+  z-index: 2; }
+  .card-sticks__item {
+    display: block;
+    background: #f66069;
+    min-width: 50px;
+    padding: 5px 3px;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px; }
+    .card-sticks__item:not(:last-child) {
+      margin-bottom: 5px; }
+
+.additional-sales-navlist {
+  list-style: none;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0; }
+  .additional-sales-navlist__item {
+    border: 1px solid #e5e5e5; }
+    .additional-sales-navlist__item:not(:first-child) {
+      margin-top: -1px; }
+  .additional-sales-navlist__link {
+    background-color: #fff;
+    color: #1e0602;
+    display: block;
+    font-size: 16px;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: .15s ease-out; }
+    .additional-sales-navlist__link:hover {
+      color: #197ac4; }
+    .additional-sales-navlist__link.active {
+      pointer-events: none;
+      background-color: #0094ce;
+      color: #fff; }
+
+.additional-sales-tab {
+  display: none; }
+  .additional-sales-tab__content {
+    margin-bottom: 10px; }
+
+.additional-sales .item-catalogue-card {
+  margin-bottom: 20px; }
+
+.item-catalogue-card .card-sticks {
+  right: 10px;
+  top: 10px; }
+
+.item-catalogue-card__container {
+  transition: box-shadow .3s ease-out;
+  background: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e5e5; }
+
+.item-catalogue-card__section {
+  position: relative; }
+  .item-catalogue-card__section:not(:last-child) {
+    border-bottom: 1px solid #e5e5e5; }
+  .item-catalogue-card__section:not(:first-child) {
+    padding: 10px; }
+
+.item-catalogue-card__image {
+  display: block;
+  position: relative; }
+  .item-catalogue-card__image:before {
+    content: '';
+    display: block;
+    padding-top: 100%; }
+  .item-catalogue-card__image img {
+    display: block;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: contain;
+       object-fit: contain;
+    transition: opacity .3s ease-out; }
+  .item-catalogue-card__image:hover img {
+    opacity: 0.5; }
+  .item-catalogue-card__image:hover .item-catalogue-card__icon {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+
+.item-catalogue-card__icon {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  opacity: 0;
+  will-change: transform;
+  transition: opacity .3s ease-out, transform .3s ease-out; }
+
+.item-catalogue-card__title {
+  color: #1e0602;
+  display: block;
+  transition: color .15s ease-out; }
+  .item-catalogue-card__title:hover {
+    color: #197ac4; }
+
+.item-catalogue-card__buttons {
+  display: flex;
+  margin: 0 -10px 0 0; }
+
+.item-catalogue-card__button {
+  flex: 1 1 33.33%;
+  line-height: 33px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  margin-right: 10px;
+  text-align: center;
+  transition: .15s ease-out; }
+  .item-catalogue-card__button_style-1 {
+    border-color: #ccc; }
+    .item-catalogue-card__button_style-1 i {
+      color: #ccc;
+      transition: inherit; }
+    .item-catalogue-card__button_style-1:hover {
+      border-color: #999999; }
+      .item-catalogue-card__button_style-1:hover i {
+        color: #1d1d1d; }
+  .item-catalogue-card__button_style-2 {
+    border-color: #ffcc33;
+    background-color: #ffcc33;
+    color: #1d1d1d;
+    position: relative; }
+    .item-catalogue-card__button_style-2 img {
+      position: absolute;
+      display: block;
+      width: 18px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .item-catalogue-card__button_style-2 i {
+      font-size: 16px; }
+    .item-catalogue-card__button_style-2:hover {
+      border-color: #ffdd7d;
+      background-color: #ffdd7d; }
+  .item-catalogue-card__button_favorites.active {
+    border-color: #f66069; }
+    .item-catalogue-card__button_favorites.active i {
+      color: #f66069; }
+  .item-catalogue-card__button_comparison.active {
+    border-color: #8ec824; }
+    .item-catalogue-card__button_comparison.active i {
+      color: #8ec824; }
+
+.item-catalogue-card__pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  line-height: 1; }
+
+.item-catalogue-card__current-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e0602; }
+
+.item-catalogue-card__old-price {
+  text-decoration: line-through; }
+
+@media all and (max-width: 767px) {
+  .additional-sales-navlist {
+    padding: 1px 10px 0 11px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 30px 0; }
+    .additional-sales-navlist__item {
+      margin: -1px 0 0 -1px; }
+    .additional-sales-navlist__link {
+      padding: 10px 15px; } }
+
+@media all and (max-width: 575px) {
+  .additional-sales-tab__content {
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+    margin-bottom: 5px; }
+  .additional-sales-navlist {
+    margin: 0 0 20px 0; }
+  .additional-sales .item-catalogue-card {
+    padding: 0 7.5px;
+    margin-bottom: 15px; } }
